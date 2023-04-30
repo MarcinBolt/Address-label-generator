@@ -2,9 +2,16 @@
 // 1) na pewno chcecie jakies startowe wartosci
 // 2) musicie w ten sposob okreslic strukture danych! :)
 const INIT_STORE = {
-	userName: "Mist",
+	userNick: "Mist",
+	userName: "Jan",
+	userLastName: "Kowalski",
+	userPhone: "666111222",
+	address: "ul. Warszawska 5/3",
+	postCode: "00-111",
+	city: "Warszawa",
 	userAge: 33,
 	userLoggedIn: false,
+	userPass: "123456",
 	// ...
 };
 
