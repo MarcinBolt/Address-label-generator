@@ -1,0 +1,8 @@
+.header {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--darker-background-color);
+    color: var(--light-font-color);
+}

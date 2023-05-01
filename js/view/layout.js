@@ -4,7 +4,7 @@ const viewHeader = () => `
 <header>
 <div class="header container">
   <div class="header__logo"></div>
-  <nav class="nav nav__signed-out">
+  <nav class="nav nav-signed-out">
     <ul class="nav__list list">
       <li class="nav__list-item list__item">
         <p class="app__sign-in">Create new account</p>
@@ -14,7 +14,7 @@ const viewHeader = () => `
       </li>
     </ul>
   </nav>
-  <nav class="nav nav__signed-in nav-none">
+  <nav class="nav nav-signed-in nav-none">
     <ul class="nav__list list">
       <li class="nav__list-item list__item">
         <p class="app__update-profile">Your profile</p>
@@ -25,20 +25,20 @@ const viewHeader = () => `
     </ul>
   </nav>
 </div>
-</header>`
+</header>`;
 
 const viewLayout = () => `
-<div class="app__layout">
+<div class="app__layout container">
 <div class="app__menu">
   <div class="app__singed-up">
-  <h3app__user-invitation></h3app__user-invitation>
+  <h3 class="app__user-invitation"></h3>
     <p class="app__info">What would you like to do?</p>
-    <ul class="menu-list list">
-      <li class="menu-list__item list__item">
-        <p class="menu__generate-label">Generate new address label</p>
+    <ul class="main-list list">
+      <li class="main-list__item list__item">
+        <p class="main-list__text generate-label">Generate new address label</p>
       </li>
-      <li class="menu-list__item list__item">
-        <p class="menu__add-addressee">Add new addressee</p>
+      <li class="main-list__item list__item">
+        <p class="main-list__text add-addressee">Add new addressee</p>
       </li>
     </ul>
     <div class="app__unsigned">
@@ -54,11 +54,11 @@ const viewFooter = () => `
 <div class="footer container">
   <ul class="footer__list list">
     <li class="footer__list-item list__item"><p class="footer__text">© 2023 | All Rights Reserved |</p></li>
-    <li class="footer__list-item list__item"><p class="footer__text">Developed by</p><a href="#" class="footer__text link">Us</a></li>
+    <li class="footer__list-item list__item"><p class="footer__text">Developed by <a href="#" class="footer__text link">Us</a></p></li>
   </ul>
 </div>
-</footer>`
+</footer>`;
 
-const layout = { viewHeader, viewLayout, viewFooter };
+const ViewLayout = { viewHeader, viewLayout, viewFooter };
 
-export default layout
+export default ViewLayout;

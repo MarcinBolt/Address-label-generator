@@ -3,10 +3,11 @@ import "../css/main.css";
 import Store from "./store/store";
 import View from "./view";
 import ViewUser from "./view/user";
-import layout from "./view/layout";
+import ViewLayout from "./view/layout";
 
 // dane z Store
 const userData = Store.getStore();
+const userInvitation = ViewUser.viewUserProfile(userData);
 
 // views to Array Stringow, ktore trzymaja w sobie
 // templatki roznych views
@@ -16,16 +17,16 @@ const userData = Store.getStore();
 // chcielibysmy re-renderowac tylko mniejsze czesci UI.
 // tutaj, zawsze re-renderujemy cale UI
 const views = [
-	layout.viewHeader(),
-	ViewUser.viewUserProfile(userData),
-	layout.viewLayout(),
-	layout.viewFooter(),
-	// tutaj mozecie wpisac inne funkcje zwracajace
-	// templatkowe Stringi, np.
-	// ViewLayout.viewHeader(),
-	// ViewLayout.viewFooter(),
+  ViewLayout.viewHeader(),
+  ViewUser.viewUserProfile(userData),
+  ViewLayout.viewLayout(),
+  ViewLayout.viewFooter(),
+  // tutaj mozecie wpisac inne funkcje zwracajace
+  // templatkowe Stringi, np.
+  // ViewLayout.viewHeader(),
+  // ViewLayout.viewFooter(),
 ];
 
 View.renderAppDOM(views);
 
-
+View.renderSignedUser(userInvitation);
