@@ -31,6 +31,7 @@ const viewLayout = () => `
 <div class="app__layout">
 <div class="app__menu">
   <div class="app__singed-up">
+  <h3app__user-invitation></h3app__user-invitation>
     <p class="app__info">What would you like to do?</p>
     <ul class="menu-list list">
       <li class="menu-list__item list__item">
