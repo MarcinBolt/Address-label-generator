@@ -56,13 +56,6 @@ const viewFooter = () => `
     <li class="footer__list-item list__item"><p class="footer__text">Developed by</p><a href="#" class="footer__text link">Us</a></li>
   </ul>
 </div>
-</footer>   <footer>
-<div class="footer container">
-  <ul class="footer__list list">
-    <li class="footer__list-item list__item"><p class="footer__text">© 2023 | All Rights Reserved |</p></li>
-    <li class="footer__list-item list__item"><p class="footer__text">Developed by</p><a href="#" class="footer__text link">Us</a></li>
-  </ul>
-</div>
 </footer>`
 
 const layout = { viewHeader, viewLayout, viewFooter };
