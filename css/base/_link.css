@@ -1,0 +1,11 @@
+.link {
+    text-decoration: none;
+    color: var(--decorative-font-color);
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.link:hover,
+.link:focus {
+    text-shadow: 1px 1px 3px var(--decorative-font-color);
+}

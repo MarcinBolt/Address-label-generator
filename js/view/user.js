@@ -1,7 +1,7 @@
 // TODO: rozbudowac wedle wlasnej woli
 const viewUserProfile = ({ userName }) =>
 	`
-	<h3>Welcome, ${userName}!</h3>
+	<h3 class="app__user-invitation">Welcome, ${userName}!</h3>
 	`;
 
 const ViewUser = { viewUserProfile };

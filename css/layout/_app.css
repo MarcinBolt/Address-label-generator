@@ -1,0 +1,17 @@
+.app {
+    height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.app__layout {
+    flex-grow: 1;
+}
+
+.app__info {
+font-size: 20px;
+color: var(--main-font-color);
+text-align: center;
+padding: 10px 0;
+}

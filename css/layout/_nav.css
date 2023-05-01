@@ -1,0 +1,26 @@
+.nav_list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__list-item {
+    color: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    will-change: color;
+    transition: color 250ms ease-in;
+}
+
+.nav__list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav__list-item:hover,
+.nav__list-item:focus {
+  color: var(--decorative-font-color);
+}
+
+.nav-none {
+  display: none;
+}
